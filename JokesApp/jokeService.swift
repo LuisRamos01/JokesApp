@@ -11,6 +11,7 @@ protocol jokesServiceProtocol{
     func fetchRamdonJokes(completion: @escaping (Result<Joke, Error>) -> Void)
 }
 class JokeService: jokesServiceProtocol {
+   
     func fetchRamdonJokes(completion: @escaping (Result<Joke, Error>) -> Void) {
         guard let url = URL(string: "https://official-joke-api.appspot.com/random_joke") else {
             completion(.failure(NSError(domain: "url invalida", code: -1)))

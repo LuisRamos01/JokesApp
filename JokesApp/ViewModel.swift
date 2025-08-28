@@ -14,10 +14,11 @@ class JokeViewModel: ObservableObject {
     
     private let service: jokesServiceProtocol
     
-    init(service: jokesServiceProtocol = JokeService()){
+    init(service: jokesServiceProtocol){
         self.service = service
         
     }
+  
     func fetchRandomJoke(){
         isloading = true
         errorMessage = nil
@@ -28,8 +29,7 @@ class JokeViewModel: ObservableObject {
                 switch result {
                 
                 case .success(let joke):
-                    DispatchQueue.main.async {
-                    }
+                self?.joke = joke
                 case.failure( let error ):
                     self?.errorMessage = error.localizedDescription
                     
