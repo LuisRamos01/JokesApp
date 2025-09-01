@@ -11,6 +11,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D00FC7E62E662D6900C5F410 /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		D0E6FA312E55012D00C6E88E /* JokesApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JokesApp;
@@ -34,6 +39,7 @@
 			children = (
 				D0E6FA312E55012D00C6E88E /* JokesApp */,
 				D0E6FA302E55012D00C6E88E /* Products */,
+				D00FC7E62E662D6900C5F410 /* Preview Content */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +67,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				D00FC7E62E662D6900C5F410 /* Preview Content */,
 				D0E6FA312E55012D00C6E88E /* JokesApp */,
 			);
 			name = JokesApp;
