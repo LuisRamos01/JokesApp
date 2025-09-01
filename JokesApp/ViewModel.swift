@@ -18,7 +18,7 @@ class JokeViewModel: ObservableObject {
         self.service = service
         
     }
-  
+    
     func fetchRandomJoke(){
         isloading = true
         errorMessage = nil
@@ -27,9 +27,9 @@ class JokeViewModel: ObservableObject {
                 self?.isloading = false
                 
                 switch result {
-                
+            
                 case .success(let joke):
-                self?.joke = joke
+                    self?.joke = joke
                 case.failure( let error ):
                     self?.errorMessage = error.localizedDescription
                     
